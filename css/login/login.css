@@ -1,0 +1,44 @@
+/* Login CSS */
+
+@media (max-width: 768px) {
+    body {
+        height: 100dvh;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        background-color: var(--background-color);
+        max-width:100%;
+        gap: 1rem;
+    }
+
+    header {
+        margin: 5rem 0 0 0;
+    }
+
+    .logo {
+        width: 15rem;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .section {
+        display: flex;
+        position: relative; 
+        justify-content: start;
+        align-items: center;
+        flex-direction: column;
+        max-width: 90%;
+        height: 100%;
+    }
+
+    .section .section__container {
+        display: flex;
+        justify-content: center;
+        background-color: var(--primary-color);
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+
+}
+    
