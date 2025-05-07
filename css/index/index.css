@@ -1,0 +1,57 @@
+/* INDEX CSS */
+
+/* CSS SMALL DEVICES */
+@media (max-width: 679px) {
+    /* TAGS */   
+    body {
+        min-height: 100dvh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background-color: var(--background-color);
+        max-width: 100%;
+        gap: 1rem;
+        overflow-x: hidden;
+    }
+
+    header {
+        margin: 3rem 0 1.5rem 0;
+    }
+
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 65%;
+        gap: var(--gap-mobile);
+    }
+
+    /* LOGO */
+    .logo {
+        width: 12rem;
+        height: auto;
+        margin: 0 auto;
+        margin-bottom: 1.5rem;
+    }
+
+    .section__figure {
+        height: 250px;
+        width: 250px;
+        background-color: var(--secondary-color);
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    .section__img {
+        position: relative;
+        top: 1px;
+    }
+
+    .main__h1 {
+        font-size: var(--font-size-mobile);
+        text-align: center;
+        color: var(--primary-color);
+    }
+   
+}
