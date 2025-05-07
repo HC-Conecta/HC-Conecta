@@ -14,15 +14,31 @@
         <img src="../assets/img/logo-hc-conecta.png" alt="Logo HC Conecta" class="logo">
     </header>
     <!-- SECTION -->
-    <section class="section">
-        <div class="section__container">
-            <h1> O que é?</h1>
-        </div>
-        <p> Conheça o HC Conecta.</p>
-        <div class="section__container">
-            <h1>Como funciona?</h1>
-        </div>
-        <p> Veja como é simples usar nossa ferramenta.</p>
-    </section>
+    <main>
+        <section class="section">
+            <div class="section__container">
+                <h1> O que é?</h1>
+            </div>
+            <p> Conheça o HC Conecta.</p>
+            <div class="section__container">
+                <h1>Como funciona?</h1>
+            </div>
+            <p> Veja como é simples usar nossa ferramenta.</p>
+        </section>
+        <form class="form">
+            <div>
+                <label for="form__input" class="form__label"> Seu CPF</label>
+                <input type="text" placeholder="Ex: 999.999.999-00" id="form__cpf" class="form__input">
+            </div>
+            <div>
+                <label for="form__input" class="form__label"> Telefone </label>
+                <input type="text" placeholder="Ex: 11 99999-9999" id="form__cell" class="form__input">
+            </div>
+            <div class="form__container">
+               <input type="checkbox" id="container__checkbox" class="container__checkbox">
+               <label for="container__checkbox" class="container__label"> Eu aceito os termos de uso </label>
+            </div>
+        </form>
+    </main>
 </body>
 </html>
