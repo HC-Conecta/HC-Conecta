@@ -31,7 +31,6 @@ const validCell = (cell) => {
     }
 }
 
-
 btnRouter.addEventListener('click', async (evt) => {
     evt.preventDefault();
     const cpfInput = document.querySelector('#form__cpf').value;
