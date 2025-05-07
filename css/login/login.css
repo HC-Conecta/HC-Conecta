@@ -1,6 +1,6 @@
 /* Login CSS */
 
-/* CSS SMALL DEVICES and CSS LARGE DEVICES*/
+/* CSS SMALL DEVICES*/
 @media (max-width: 679px) {
     /* TAGS */   
     body {
@@ -29,7 +29,7 @@
     
     button, a {
         color: var(--text-light-color);
-        font-size: 24px;
+        font-size: var(--font-size);
         font-weight: 600;
     }
 
@@ -86,13 +86,13 @@
       }
       
       [popover] h1 {
-        font-size: 24px;
+        font-size: var(--font-size);
         color: var(--primary-color);
       }
 
       .p__primary {
         margin: 1.5rem 0 1.5rem 0;
-        font-size: 20px;
+        font-size: var(--paragraph-size-mobile);
         color: var(--primary-color);
       }
 
@@ -118,7 +118,7 @@
       }
       
     .section p {
-        font-size: 20px;
+        font-size: var(--paragraph-size-mobile);
     }
 
     .section__container:nth-child(1)::after {
@@ -160,14 +160,14 @@
     }
 
     .form__label {
-        font-size: 24px;
+        font-size: var(--font-size);
         color: var(--text-color); 
     }
 
     .form__input {
         border: 1px solid var(--border-color);
         width: 320px;
-        font-size: 20px;
+        font-size: var(--paragraph-size-mobile);
         padding: 10px;
         border-radius: 10px;
     }
@@ -261,7 +261,7 @@
     
     button, a {
         color: var(--text-light-color);
-        font-size: 24px;
+        font-size: var(--font-size);
         font-weight: 600;
     }
 
@@ -318,13 +318,13 @@
       }
       
       [popover] h1 {
-        font-size: 24px;
+        font-size: var(--font-size);
         color: var(--primary-color);
       }
 
       .p__primary {
         margin: 1.5rem 0 1.5rem 0;
-        font-size: 20px;
+        font-size: var(--paragraph-size-mobile);
         color: var(--primary-color);
       }
 
@@ -350,7 +350,7 @@
       }
       
     .section p {
-        font-size: 20px;
+        font-size: var(--font-size);
     }
 
     .section__container:nth-child(1)::after {
@@ -392,14 +392,14 @@
     }
 
     .form__label {
-        font-size: 24px;
+        font-size: var(--font-size);
         color: var(--text-color); 
     }
 
     .form__input {
         border: 1px solid var(--border-color);
         width: 320px;
-        font-size: 20px;
+        font-size: var(--paragraph-size-mobile);
         padding: 10px;
         border-radius: 10px;
     }
@@ -475,7 +475,6 @@
         background-color: var(--background-color);
         max-width: 100%;
         gap: 1.5rem;
-        overflow-y: hidden;
         overflow-x: hidden;
     }
 
