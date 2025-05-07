@@ -44,11 +44,12 @@
         <form class="form">
             <div class="form__container">
                 <label for="form__input" class="form__label"> Seu CPF:</label>
-                <input type="text" placeholder="Ex: 999.999.999-00" id="form__cpf" class="form__input">
+                <input type="text" placeholder="Ex: 999.999.999-00" maxlength="14" id="form__cpf" class="form__input">
+                <div class="container__error"></div>
             </div>
             <div class="form__container">
                 <label for="form__input" class="form__label"> Seu Telefone: </label>
-                <input type="text" placeholder="Ex: 11 99999-9999" id="form__cell" class="form__input">
+                <input type="text" placeholder="Ex: 11 99999-9999" maxlength="13" id="form__cell" class="form__input">
             </div>
             <div class="form__container__checkbox">
                <input type="checkbox" id="container__checkbox" class="container__checkbox">
@@ -61,7 +62,9 @@
     <footer>
         <!-- SECTION ROUTER -->
         <section class="section__router">
-            <a href="../index.html" class="section__a"> Acessar</a>
+            <form action="" method="GET">
+                <button id="button__router" type="submit">Enviar</button>
+              </form>
         </section>
     </footer>
     <script src='../js/script.js'> </script>
