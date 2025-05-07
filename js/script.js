@@ -34,9 +34,8 @@ const validCell = (cell) => {
 btnRouter.addEventListener('click', async (evt) => {
     evt.preventDefault();
     const cpfInput = document.querySelector('#form__cpf').value;
-    const cpf = cpfInput.replace(/\D/g, '')
     //VALIDATION CPF
-    const BASE_URL = `https://api-cpf.vercel.app/cpf/valid/${cpf}`;
+    const BASE_URL = `https://api-cpf.vercel.app/cpf/valid/${cpfInput}`;
     const cellInput = document.querySelector('#form__cell').value;
     const containerError = document.querySelector('.container__error');
     containerError.innerHTML = '';
@@ -46,7 +45,7 @@ btnRouter.addEventListener('click', async (evt) => {
             const data = await response.json();
             if(data.Valid && validCell(cellInput)) {
                 window.location = '../index.html'
-            } else if (data.Valid == false && typeof data != 'string' ) {
+            } else if (!data.Valid && typeof data != 'string' ) {
                 const paragraph = document.createElement('p');
                 paragraph.setAttribute('class', 'error__p');
                 paragraph.innerHTML = 'Erro ao validar o CPF. '
