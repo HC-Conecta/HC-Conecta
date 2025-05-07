@@ -6,6 +6,7 @@
     body {
         min-height: 100dvh;
         display: flex;
+        justify-content: center;
         align-items: center;
         flex-direction: column;
         background-color: var(--background-color);
@@ -29,7 +30,7 @@
     
     button, a {
         color: var(--text-light-color);
-        font-size: var(--font-size);
+        font-size: var(--font-size-mobile);
         font-weight: 600;
     }
 
@@ -61,7 +62,7 @@
         background-color: var(--primary-color);
         align-items: center;
         flex-direction: column;
-        width: 320px;
+        width: 260px;
         padding: 12px;
         border-radius: 10px;
         cursor: pointer;
@@ -76,7 +77,7 @@
         border-radius: 8px;
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
         width: 80%;
-        height: 80%;
+        height: 65%;
         font-size: 16px;
         z-index: 100;
         position: relative;
@@ -86,7 +87,7 @@
       }
       
       [popover] h1 {
-        font-size: var(--font-size);
+        font-size: var(--font-size-mobile);
         color: var(--primary-color);
       }
 
@@ -97,10 +98,12 @@
       }
 
       .popup__link {
-        padding: 14px;
+        padding: 12px;
+        width: 100%;
         background-color: var(--secondary-color);
         border-radius: 10px;
         position: relative;
+        margin: auto;
       }
 
       .popup__link::after {
@@ -114,7 +117,7 @@
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        right: 55px;
+        right: 65px;
       }
       
     .section p {
@@ -123,7 +126,7 @@
 
     .section__container:nth-child(1)::after {
         content: '';
-        background-image: url('../../assets/img/calendar.png');
+        background-image: url('../../assets/img/book.png');
         background-size: contain;
         background-repeat: no-repeat;
         width: 20px;
@@ -132,7 +135,7 @@
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        right: 70px;
+        right: 50px;
     }
 
     .section__container:nth-child(3)::after {
@@ -146,7 +149,7 @@
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        right: 30px;
+        right: 9px;
     }
 
     /* FORM */   
@@ -160,13 +163,13 @@
     }
 
     .form__label {
-        font-size: var(--font-size);
+        font-size: var(--paragraph-size-mobile);
         color: var(--text-color); 
     }
 
     .form__input {
         border: 1px solid var(--border-color);
-        width: 320px;
+        width: 260px;
         font-size: var(--paragraph-size-mobile);
         padding: 10px;
         border-radius: 10px;
@@ -182,7 +185,7 @@
         display: flex;
         gap: 10px;
         position: relative;
-        right: 3rem;
+        right: 1rem;
     }
 
     .container__checkbox {
@@ -206,7 +209,7 @@
     }
     
     .button__router {
-        width: 290px;
+        width: 240px;
         color: var(--text-light-color);
         font-weight: 600;
     }
@@ -222,7 +225,7 @@
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        right: 80px;
+        right: 55px;
     }
 
     .error__p {
@@ -236,9 +239,10 @@
 @media (min-width: 680px) and (max-width: 1200px) {
     /* TAGS */   
     body {
-        min-height: 100dvh;
+        min-height: 100vh;
         display: flex;
         align-items: center;
+
         flex-direction: column;
         background-color: var(--background-color);
         max-width: 100%;
@@ -293,7 +297,7 @@
         background-color: var(--primary-color);
         align-items: center;
         flex-direction: column;
-        width: 320px;
+        width: 270px;
         padding: 12px;
         border-radius: 10px;
         cursor: pointer;
@@ -308,7 +312,7 @@
         border-radius: 8px;
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
         width: 55%;
-        height: 80%;
+        height: 70%;
         font-size: 16px;
         z-index: 100;
         position: relative;
@@ -329,7 +333,7 @@
       }
 
       .popup__link {
-        padding: 14px;
+        padding: 12px;
         background-color: var(--secondary-color);
         border-radius: 10px;
         position: relative;
@@ -355,7 +359,7 @@
 
     .section__container:nth-child(1)::after {
         content: '';
-        background-image: url('../../assets/img/calendar.png');
+        background-image: url('../../assets/img/book.png');
         background-size: contain;
         background-repeat: no-repeat;
         width: 20px;
@@ -378,7 +382,7 @@
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        right: 30px;
+        right: 40px;
     }
 
     /* FORM */   
@@ -398,7 +402,7 @@
 
     .form__input {
         border: 1px solid var(--border-color);
-        width: 320px;
+        width: 270px;
         font-size: var(--paragraph-size-mobile);
         padding: 10px;
         border-radius: 10px;
@@ -414,7 +418,7 @@
         display: flex;
         gap: 10px;
         position: relative;
-        right: 3rem;
+        right: 1rem;
     }
 
     .container__checkbox {
@@ -438,7 +442,7 @@
     }
     
     .button__router {
-        width: 290px;
+        width: 250px;
         color: var(--text-light-color);
         font-weight: 600;
     }
@@ -467,7 +471,7 @@
 @media (min-width: 1201px) {
     /* TAGS */   
     body {
-        min-height: 100dvh;
+        min-height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -539,19 +543,24 @@
         border: 2px solid var(--secondary-color);
         border-radius: 8px;
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-        min-width: 30%;
+        min-width: 35%;
         height: 70%;
         font-size: 16px;
         z-index: 100;
         position: relative;
         top: 50%;
-        left: 35%;
+        left: 32.5%;
         transform: translateY(-50%);
       }
       
       [popover] h1 {
         font-size: 32px;
         color: var(--primary-color);
+        max-width: 80%;
+      }
+
+      [popover] p {
+        min-width: 90%;
       }
 
       .section__popup {
@@ -604,7 +613,7 @@
 
     .section__container:nth-child(1)::after {
         content: '';
-        background-image: url('../../assets/img/calendar.png');
+        background-image: url('../../assets/img/book.png');
         background-size: contain;
         background-repeat: no-repeat;
         width: 24px;
