@@ -20,7 +20,6 @@ const validCellRegex = /^\(?\d{2}\)?\s?\d{4,5}-?\d{4}$/
 const validCell = (cell) => {
     const containerError = document.querySelector('.container__error__cell');
     containerError.innerHTML = '';
-
     if(!validCellRegex.test(cell)) {
         const paragraph = document.createElement('p');
         paragraph.setAttribute('class', 'error__p');
@@ -33,7 +32,8 @@ const validCell = (cell) => {
 }
 
 
-btnRouter.addEventListener('click', async () => {
+btnRouter.addEventListener('click', async (evt) => {
+    evt.preventDefault();
     const cpfInput = document.querySelector('#form__cpf').value;
     const cpf = cpfInput.replace(/\D/g, '')
     //VALIDATION CPF
@@ -46,8 +46,8 @@ btnRouter.addEventListener('click', async () => {
         if(response.status === 200) {
             const data = await response.json();
             if(data.Valid && validCell(cellInput)) {
-                window.location = '../index.html';
-            } else if (data.Valid == false && data != 13 && typeof data != 'string' ) {
+                window.location = '../index.html'
+            } else if (data.Valid == false && typeof data != 'string' ) {
                 const paragraph = document.createElement('p');
                 paragraph.setAttribute('class', 'error__p');
                 paragraph.innerHTML = 'Erro ao validar o CPF. '
