@@ -110,19 +110,6 @@
         margin: auto;
       }
 
-      .popup__link::after {
-        content: '';
-        background-image: url('../../assets/img/close.png');
-        background-size: contain;
-        background-repeat: no-repeat;
-        width: 15px;
-        height: 15px;
-        display: inline-block;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        right: 65px;
-      }
       
     .section p {
         font-size: var(--paragraph-size-mobile);
@@ -374,19 +361,6 @@
         margin: auto;
       }
 
-      .popup__link::after {
-        content: '';
-        background-image: url('../../assets/img/close.png');
-        background-size: contain;
-        background-repeat: no-repeat;
-        width: 15px;
-        height: 15px;
-        display: inline-block;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        right: 75px;
-      }
       
     .section p {
         font-size: var(--paragraph-size-mobile);
@@ -644,20 +618,6 @@
         background-color: var(--secondary-color);
         border-radius: 10px;
         position: relative;
-      }
-
-      .popup__link::after {
-        content: '';
-        background-image: url('../../assets/img/close.png');
-        background-size: contain;
-        background-repeat: no-repeat;
-        width: 20px;
-        height: 20px;
-        display: inline-block;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        right: 105px;
       }
 
     .section p {

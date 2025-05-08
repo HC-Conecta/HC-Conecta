@@ -27,3 +27,10 @@ const routerAboutUs = document.getElementById('router-aboutUs');
 sectionAboutUs.addEventListener('click', () => {
     routerAboutUs.click();
 })
+
+const sectionPreviosPage = document.getElementById('section-router');
+const previousPageRouter = document.getElementById('previousPage-router');
+
+sectionPreviosPage.addEventListener('click', () => {
+    previousPageRouter.click();
+})

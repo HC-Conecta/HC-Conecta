@@ -31,8 +31,6 @@ const validCell = (cell) => {
     }
 }
 
-
-
 const validBtnChecked = (btnChecked) => {
     const containerCheckboxError = document.getElementById('container-checkbox__error');
     containerCheckboxError.innerHTML = '';
