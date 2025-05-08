@@ -73,14 +73,26 @@
         justify-content: center;
         text-align: center;
         border-radius: 10px;
+        gap: 10px;
     }
+
 
     .section__main h2{
         font-size: var(--font-size-mobile);
         color: var(--text-light-color);
     }
 
-    .section__main p {
+    .section-surprise__button {
+        height: 70px;
+        width: 80%;
+        padding: 10;
+        background-color: var(--primary-color);
+        color: var(--text-light-color);
+        border-radius: 10px;
+        font-size: var(--paragraph-size-mobile);
+    }
+
+    .section__main .section-surprise__p {
         font-size: var(--paragraph-size-mobile);
         max-width: 90%;
         color: var(--text-light-color);
@@ -171,6 +183,7 @@
         max-width: 80%;
         text-align: center;
     }
+
 }
 
 /* CSS LARGE DEVICES*/
@@ -251,6 +264,7 @@
         justify-content: center;
         text-align: center;
         border-radius: 10px;
+        gap: 10px;
     }
 
     .section__main h2{
@@ -258,7 +272,17 @@
         color: var(--text-light-color);
     }
 
-    .section__main p {
+    .section-surprise__button {
+        height: 70px;
+        width: 80%;
+        padding: 10;
+        background-color: var(--primary-color);
+        color: var(--text-light-color);
+        border-radius: 10px;
+        font-size: var(--paragraph-size-mobile);
+    }
+
+    .section__main .section-surprise__p {
         font-size: var(--paragraph-size-mobile);
         max-width: 90%;
         color: var(--text-light-color);
@@ -432,16 +456,28 @@
         justify-content: center;
         text-align: center;
         border-radius: 10px;
+        gap: 10px;
     }
 
     .section__main h2{
-        font-size: 24px;
+        font-size: var(--font-size-mobile);
         color: var(--text-light-color);
     }
 
-    .section__main p {
+    .section-surprise__button {
+        height: 70px;
+        width: 80%;
+        padding: 10;
+        background-color: var(--primary-color);
+        color: var(--text-light-color);
+        border-radius: 10px;
+        font-size: var(--font-size-mobile);
+        cursor: pointer;
+    }
+
+    .section__main .section-surprise__p {
         font-size: 22px;
-        max-width: 90%;
+        max-width: 80%;
         color: var(--text-light-color);
         
     }
@@ -507,6 +543,7 @@
         align-items: center;
         cursor: pointer;
         gap: 25px;
+        justify-content: center;
     }
 
     .figure__image {   
@@ -516,7 +553,8 @@
     }
 
     .section-div__text {
-        max-width: 90%;
+        display: flex;
+        flex-direction: column;
     }
     .section-div__text h2 {
         font-size: 24px;
