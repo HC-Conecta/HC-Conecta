@@ -31,6 +31,23 @@ const validCell = (cell) => {
     }
 }
 
+
+
+const validBtnChecked = (btnChecked) => {
+    const containerCheckboxError = document.getElementById('container-checkbox__error');
+    containerCheckboxError.innerHTML = '';
+    if(!btnChecked.checked) {
+        const paragraph = document.createElement('p');
+        paragraph.setAttribute('class', 'error__p');
+        paragraph.innerHTML = 'Você precisa aceitar os termos de uso. '
+        containerCheckboxError.appendChild(paragraph);
+    } else {
+        return true;
+    }
+}
+
+const btnChecked = document.getElementById('container__checkbox');
+
 btnRouter.addEventListener('click', async (evt) => {
     evt.preventDefault();
     const cpfInput = document.querySelector('#form__cpf').value;
@@ -43,9 +60,9 @@ btnRouter.addEventListener('click', async (evt) => {
         const response = await fetch(BASE_URL, {method: 'GET'})
         if(response.status === 200) {
             const data = await response.json();
-            if(data.Valid && validCell(cellInput)) {
+            if(data.Valid && validCell(cellInput) && validBtnChecked(btnChecked)) {
                 window.location = '../index.html'
-            } else if (!data.Valid && typeof data != 'string' ) {
+            } else if (!data.Valid && typeof data != 'string') {
                 const paragraph = document.createElement('p');
                 paragraph.setAttribute('class', 'error__p');
                 paragraph.innerHTML = 'Erro ao validar o CPF. '
