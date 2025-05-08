@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/globals.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/login/login.css">
+    <title>HC Conecta</title>
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <img src="../assets/img/logo-hc-conecta.png" alt="Logo HC Conecta" class="logo">
+    </header>
+    <!-- SECTION -->
+    <main>
+        <section class="section">
+            <div class="section__container">
+                <button popovertarget="popup" class="popup__button"> O que é?</button>
+                <div class="section-popup__container">
+                    <div id="popup" class="section__popup" popover>
+                        <h1> O que é o HC Conecta?</h1>
+                        <p> Muita gente se sente perdida com tecnologia, com os sites... ou até com a vida mesmo.
+                            <br><br>
+                            E tudo isso, somado às dores físicas e emocionais, pode deixar a gente cansado, sem saber pra onde ir.
+                            <br><br>
+                            Foi por isso que criamos o HC Conecta.
+                            <br><br>
+                            Um espaço feito com carinho pra te acolher, te ouvir, tirar dúvidas e te mostrar caminhos — com conversas simples, treinos, apoio psicológico e dicas fáceis.
+                        </p>
+                        
+                        <p class="p__primary"> Você não está sozinho. Pode contar com a gente 💙 </p>
+                        <div class="popup__link" id="popup__link"> <a href="login.html" class="popup__a"> Fechar</a></div>
+                    </div>
+                </div>
+            </div>
+            <p> Conheça o HC Conecta.</p>
+            <div class="section__container">
+                <button>Como funciona?</button>
+            </div>
+            <p> Veja como é simples usar nossa ferramenta.</p>
+        </section>
+
+        <!-- FORM -->
+        <form class="form">
+            <div class="form__container">
+                <label for="form__input" class="form__label"> Seu CPF:</label>
+                <input type="text" placeholder="Ex: 99999999900" maxlength="11" id="form__cpf" class="form__input">
+                <div class="container__error"></div>
+            </div>
+            <div class="form__container">
+                <label for="form__input" class="form__label"> Seu Telefone: </label>
+                <input type="text" placeholder="Ex: (11) 99999-9999" maxlength="15" id="form__cell" class="form__input">
+                <div class="container__error__cell"></div>
+            </div>
+            <div class="form__container__checkbox">
+               <input type="checkbox" id="container__checkbox" class="container__checkbox">
+               <label for="container__checkbox" class="container__label"> Eu aceito os termos de uso </label>
+            </div>
+            <div class="container-checkbox__error" id="container-checkbox__error"></div>
+        </form>
+
+        <!-- SECTION ROUTER -->
+        <section class="section__router">
+            <button id="button__router" class="button__router" type="submit">Acessar</button>
+        </section>
+    </main>
+    <footer class="footer">
+        <p> HC Conecta - Todos os direitos reservados. </p>
+    </footer>
+    <script src='../js/login.js'> </script>
+</body>
+</html>

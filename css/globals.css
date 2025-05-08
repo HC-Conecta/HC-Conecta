@@ -1,0 +1,14 @@
+/* Global Styles */
+
+:root {
+    --primary-color: #1277BD;
+    --secondary-color: #009CA6;
+    --background-color: #F4f4f4;
+    --text-color: #1E1E1E;
+    --text-light-color: #F4f4f4;
+    --font-family: 'Inter', sans-serif;
+    --gap-mobile: 20px;
+    --border-color: #717171;
+    --paragraph-size-mobile: 20px;
+    --font-size-mobile: 24px; 
+}

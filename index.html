@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/globals.css">
+    <link rel="stylesheet" href="css/index/index.css">
+    <title>HC Conecta - Bem vindo</title>
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header"> 
+        <img src="assets/img/logo-hc-conecta.png" alt="Logo HC Conecta" class="logo">
+
+        <section class="section__container">
+            <figure class="section__figure">
+                <img src="assets/img/person.png" alt="Personagem HC Conecta" class="section__img">
+            </figure>
+        </section>
+    </header>
+    <!-- MAIN -->
+    <main>
+        <!-- SECTION -->
+        <h1 class="main__h1"> Bem vindo ao HC Conecta!</h1>
+        <section class="section__main">
+            <h2> Frase do dia: </h2>
+            <button class="section-surprise__button"> Revelar frase</button>
+            <p class="section-surprise__p"> </p>
+        </section>
+        <!-- SECTION ROUTER -->
+        <section class="section-router" id="section-router">
+            <a href="./pages/login.html" class="section-router__a" id="previousPage-router"> Voltar</a>
+        </section>
+        <section class="section__container">
+            <div class="section__div" id="section-div__appointment">
+                <figure> 
+                    <img src="assets/img/calendar.png"  class="figure__image" alt="imagem calendario">
+                </figure>
+                <div class="section-div__text" id="section__appointment">
+                    <h2> Marcar consulta </h2>
+                    <p> Agende sua consulta agora mesmo! </p>
+                </div>
+            </div>
+            <!-- JS (CLICK) -->
+            <a href="./pages/appointment.html" id="router-appointment"></a>
+            <div class="section__div" id="section-doubt">
+                <figure> 
+                    <img src="assets/img/doubt-message.png" class="figure__image" alt="Duvida">
+                </figure>
+                <div class="section-div__text">
+                    <h2> Como posso te ajudar hoje?</h2>
+                    <p> Receba ajuda agora mesmo.</p>
+                </div>
+            </div>
+            <!-- JS (CLICK) -->
+            <a href="./pages/doubt.html" id="router-doubt"></a>
+            <div class="section__div" id="section-suport">
+                <figure> 
+                    <img src="assets/img/attendant.png" class="figure__image" alt="Atendente">
+                </figure>
+                <div class="section-div__text">
+                    <h2> Ajuda e suporte </h2>
+                    <p>Precisa de ajuda? Estamos aqui pra você. </p>
+                </div>
+            </div>
+            <!-- JS (CLICK) -->
+            <a href="./pages/suport.html" id="router-suport"></a>
+            <div class="section__div" id="section-aboutUs">
+                <figure> 
+                    <img src="assets/img/group.png" class="figure__image" alt="Grupo">
+                </figure>
+                <div class="section-div__text">
+                    <h2>Que somos?</h2>
+                    <p> Conheça quem está por trás do HC Conecta </p>
+                </div>
+            </div>
+            <!-- JS (CLICK) -->
+            <a href="./pages/aboutUs.html" id="router-aboutUs"></a>
+        </section>
+    </main>
+    <footer class="footer">
+        <p> HC Conecta - Todos os direitos reservados. </p>
+    </footer>
+    <script src="js/index.js"> </script>
+</body>
+</html>
