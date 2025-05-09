@@ -6,9 +6,12 @@
     --background-color: #F4f4f4;
     --text-color: #1E1E1E;
     --text-light-color: #F4f4f4;
-    --font-family: 'Inter', sans-serif;
-    --gap-mobile: 20px;
     --border-color: #717171;
+    
+    --font-family: 'Inter', sans-serif;
     --paragraph-size-mobile: 20px;
     --font-size-mobile: 24px; 
+
+    --logo-size: 12rem;
+    --gap-mobile: 20px;
 }

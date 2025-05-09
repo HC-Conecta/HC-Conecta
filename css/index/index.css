@@ -38,7 +38,7 @@
 
     /* LOGO */
     .logo {
-        width: 12rem;
+        width: var(--logo-size);
         height: auto;
         margin: 0 auto;
         margin-bottom: 1.5rem;
@@ -227,7 +227,7 @@
 
     /* LOGO */
     .logo {
-        width: 12rem;
+        width: var(--logo-size);
         height: auto;
         margin: 0 auto;
         margin-bottom: 1.5rem;
@@ -419,7 +419,7 @@
 
     /* LOGO */
     .logo {
-        width: 12rem;
+        width: var(--logo-size);
         height: auto;
         margin: 0 auto;
         margin-bottom: 1.5rem;
