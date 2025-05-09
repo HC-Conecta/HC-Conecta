@@ -512,7 +512,6 @@
 
     main {
         display: flex;
-        justify-content: center;
         align-items: center;
         flex-direction: column;
         width: 80%;
@@ -525,8 +524,9 @@
         font-weight: 600;
     }
 
-    p {
-        font-size: 22px;
+    span {
+        display: flex;
+        justify-content: start;
     }
 
     /* CLASS */   
@@ -542,12 +542,13 @@
     .section {
         display: flex;
         position: relative; 
-        justify-content: start;
+        justify-content: center;
         flex-direction: column;
         height: 100%;
         gap: var(--gap-mobile);
         text-align: center;
         max-width: 100%;
+        align-items: center;
     }
 
     .section__container {
@@ -556,8 +557,8 @@
         background-color: var(--primary-color);
         align-items: center;
         flex-direction: column;
-        width: 370px;
-        padding: 12px;
+        width: 300px;
+        padding: 14px;
         border-radius: 10px;
         cursor: pointer;
         position: relative; 
@@ -579,12 +580,13 @@
         top: 50%;
         left: 32.8%;
         transform: translateY(-50%);
+        overflow-x: hidden;
       }
       
       [popover] h1 {
-        font-size: 28px;
+        font-size: 24px;
         color: var(--primary-color);
-        max-width: 80%;
+        max-width: 90%;
       }
 
       [popover] p {
@@ -597,7 +599,7 @@
       }
 
       .section__popup h1, p, .popup__link{
-        width: 370px;
+        width: 300px;
         position: relative;
         left: 50%;
         transform: translateX(-50%)
@@ -605,23 +607,28 @@
 
       .popup__button {
         cursor: pointer;
+        font-size: 24px;
       }
 
       .p__primary {
-        font-size: 22px;
+        font-size: 100px;
         color: var(--primary-color);
       }
 
       .popup__link {
         margin-top: 1.5rem;
-        padding: 14px;
         background-color: var(--secondary-color);
         border-radius: 10px;
         position: relative;
+        padding: 12px;
+      }
+
+      .popup__a {
+        font-size: 24px;
       }
 
     .section p {
-        font-size: 22px;
+        font-size: 20px;
         max-width: 90%;
     }
 
@@ -636,7 +643,7 @@
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        right: 80px;
+        right: 70px;
     }
 
     .section__container:nth-child(3)::after {
@@ -650,7 +657,7 @@
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        right: 40px;
+        right: 25px;
     }
 
     /* FORM */   
@@ -664,14 +671,14 @@
     }
 
     .form__label {
-        font-size: 22px;
+        font-size: 20px;
         color: var(--text-color); 
     }
 
     .form__input {
         border: 1px solid var(--border-color);
-        width: 370px;
-        font-size: 22px;
+        width: 300px;
+        font-size: 20px;
         padding: 10px;
         border-radius: 10px;
     }
@@ -686,7 +693,7 @@
         display: flex;
         gap: 10px;
         position: relative;
-        right: 4.5rem;
+        right: 2rem;
     }
 
     .container__checkbox {
@@ -716,7 +723,8 @@
     }
     
     .button__router {
-        width: 345px;
+        width: 280px;
+        font-size: 24px;
         color: var(--text-light-color);
         font-weight: 600;
         cursor: pointer;
@@ -733,7 +741,7 @@
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        right: 95px;
+        right: 75px;
     }
 
     .error__p {
