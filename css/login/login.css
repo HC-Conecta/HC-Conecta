@@ -140,7 +140,7 @@
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        right: 9px;
+        margin-left: 180px
     }
 
     /* FORM */   
@@ -387,7 +387,7 @@
         height: 20px;
         display: inline-block;
         position: absolute;
-        margin-left: 225px;
+        margin-left: 180px;
     }
 
     /* FORM */   
@@ -656,7 +656,7 @@
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        right: 25px;
+        right: 50px;
     }
 
     /* FORM */   
