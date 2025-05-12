@@ -89,6 +89,7 @@
         background-color: var(--primary-color);
         color: var(--text-light-color);
         border-radius: 10px;
+        cursor: pointer;
         font-size: var(--paragraph-size-mobile);
     }
 
@@ -183,6 +184,20 @@
         color: var(--text-light-color);
         max-width: 80%;
         text-align: center;
+    }
+
+     .button_surprise {
+        display: hidden;
+    }
+
+     .button_surprise {
+        display: none;
+    }
+
+    .section-surprise {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
 }
@@ -287,8 +302,8 @@
         font-size: var(--paragraph-size-mobile);
         max-width: 90%;
         color: var(--text-light-color);
-        
     }
+
 
     .section-router {
         display: flex;
@@ -376,6 +391,20 @@
         color: var(--text-light-color);
         max-width: 80%;
         text-align: center;
+    }
+
+    .button_surprise {
+        display: hidden;
+    }
+
+     .button_surprise {
+        display: none;
+    }
+
+    .section-surprise {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
 
@@ -581,5 +610,15 @@
         color: var(--text-light-color);
         max-width: 80%;
         text-align: center;
+    }
+
+    .button_surprise {
+        display: none;
+    }
+
+    .section-surprise {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
