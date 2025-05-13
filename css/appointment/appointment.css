@@ -1,0 +1,89 @@
+/* appointment CSS */
+
+/* CSS SMALL DEVICES */
+@media (max-width: 679px) {
+    /* TAGS */   
+    body {
+        min-height: 100dvh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-color: var(--background-color);
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    header {
+        margin: 3rem 0 0 0;
+    }
+
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 65%;
+        gap: var(--gap-mobile);
+    }
+
+    p {
+        font-size: var(--paragraph-size-mobile);
+    }
+
+    h2 {
+        font-size: var(--paragraph-size-mobile);
+        color: var(--primary-color);
+    }
+
+    h1 {
+         font-size: var(--font-size-mobile);
+        color: var(--primary-color);
+        text-align: center;
+    }
+
+    /* LOGO */
+    .logo {
+        width: var(--logo-size);
+        height: auto;
+        margin: 0 auto;
+        margin-bottom: 1.5rem;
+    }
+
+    .section-router {
+        display: flex;
+        justify-content: center;
+        background-color: var(--secondary-color);
+        align-items: center;
+        flex-direction: column;
+        width: 260px;
+        padding: 12px;
+        border-radius: 10px;
+        cursor: pointer;
+        position: relative;
+        transition: 0.3s ease-in-out ;
+            &:active {
+                transform: scale(1.04);
+            }
+    }
+    
+    .section-router__a {
+        color: var(--text-light-color);
+        font-size: var(--font-size-mobile);
+        font-weight: 600;
+    }
+
+    .section-router__a::after {
+        content: '';
+        background-image: url('../../assets/img/enter.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%) rotate(180deg);
+        right: 65px;
+    }
+}
