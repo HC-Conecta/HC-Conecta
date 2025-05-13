@@ -1,4 +1,4 @@
-/* appointment CSS */
+/* doubt CSS */
 
 /* CSS SMALL DEVICES */
 @media (max-width: 679px) {
@@ -536,6 +536,9 @@
     }
 
     .accordion-body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         display: none;
     }
 
@@ -552,7 +555,8 @@
 
     .accordion-body.active {
         display: flex;
-        flex-direction: column;
+        align-items: start;
+        gap: 15px;
     }
 
 
