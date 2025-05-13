@@ -147,7 +147,13 @@
 
     .accordion-body.active {
         display: flex;
+        align-items: start;
     }
+
+    .accordion-body__ul li a {
+        color: var(--secondary-color)
+    }
+
 
     .accordion-body p {
         font-size: var(--paragraph-size-mobile)
@@ -348,6 +354,7 @@
 
     .accordion-body.active {
         display: flex;
+        align-items: start;
     }
 
     .accordion-body p {
@@ -557,6 +564,10 @@
         display: flex;
         align-items: start;
         gap: 15px;
+    }
+
+    .accordion-body__ul li a {
+        color: var(--secondary-color)
     }
 
 
