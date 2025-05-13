@@ -129,6 +129,22 @@
         display: none;
     }
 
+    
+    .accordion-body__ul {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .accordion-body__ul li {
+        color: var(--text-color);
+        font-size: var(--paragraph-size-mobile)
+    }
+
+    .accordion-body__ul li a {
+        color: var(--secondary-color)
+    }
+
     .accordion-body.active {
         display: flex;
     }
@@ -162,6 +178,22 @@
         max-width: 80%;
         text-align: center;
     }
+
+    .section__main {
+        display: flex;
+        flex-direction: column;
+        align-items: center
+    }
+
+    .section__main .section-h1__main {
+        max-width: 260px;
+    }
+
+    .section__main p {
+        max-width: 260px;
+        text-align: center;
+    }
+
 }
 
 /* CSS LARGE DEVICES */
@@ -299,6 +331,21 @@
         display: none;
     }
 
+    .accordion-body__ul {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .accordion-body__ul li {
+        color: var(--text-color);
+        font-size: var(--paragraph-size-mobile);
+    }
+
+    .accordion-body__ul li a {
+        color: var(--secondary-color)
+    }
+
     .accordion-body.active {
         display: flex;
     }
@@ -330,6 +377,21 @@
         font-size: 16px;
         color: var(--text-light-color);
         max-width: 80%;
+        text-align: center;
+    }
+
+    .section__main {
+        display: flex;
+        flex-direction: column;
+        align-items: center
+    }
+
+    .section__main .section-h1__main {
+        max-width: 270px;
+    }
+
+    .section__main p {
+        max-width: 270px;
         text-align: center;
     }
 }
@@ -385,11 +447,20 @@
         margin-bottom: 1.5rem;
     }
 
-    .section__main .section-h1__main {
-        max-width: 300px;
+    .section__main {
+        display: flex;
+        flex-direction: column;
+        align-items: center
     }
 
-    
+    .section__main .section-h1__main {
+        max-width: 330px;
+    }
+
+    .section__main p {
+        max-width: 330px;
+        text-align: center;
+    }
 
     .section-router {
         display: flex;
@@ -469,6 +540,17 @@
         flex-direction: column;
         align-items: center;
         display: none;
+    }
+
+    .accordion-body__ul {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .accordion-body__ul li {
+        color: var(--text-color);
+        font-size: var(--paragraph-size-mobile);
     }
 
     .accordion-body.active {
