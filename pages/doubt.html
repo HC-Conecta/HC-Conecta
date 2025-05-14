@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/globals.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/doubt/doubt.css">
+    <title>HC Conecta - Agendar consulta</title>
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <img src="../assets/img/logo-hc-conecta.png" alt="Logo HC Conecta" class="logo">
+    </header>
+    <main>
+        <section class="section__main">
+            <h1 class="section-h1__main"> Perguntas frequentes do HC </h1>
+            <p> Aqui estão algumas perguntas comuns e suas respostas para ajudar você a entender melhor como as coisas funcionam no Hospital das Clínicas.</p>
+        </section>
+        <section class="section-navigation" id="section-navigation">
+            <a href="../index.html" class="section-navigation__a" id="previousPage-navigation"> Voltar</a>
+        </section>
+        <section id="section__container" class="section-container">
+            <!-- ACCORDION 1-->
+            <div class="accordion">
+                <button class="accordion-header">
+                    <span> Marcar exames </span> 
+                    <img src="../assets/img/arrow-down.png" class="accordion-img active" alt="Seta para baixo">
+                </button>
+                <div class="accordion-body">
+                     <p> <b> Sou paciente do HC e preciso marcar um exame. O que faço? </b></p>
+                     <p> Se você é paciente do HC, o exame é solicitado pelo sistema interno (InterRad). Após a solicitação, é só aguardar: o hospital envia por SMS a data e hora do exame.</p>
+                    <ul class="accordion-body__ul">
+                        <li> Você também pode consultar no site: <a href="www.pedidoexame.hc.fm.usp.br"> Clique aqui para acessar o site</a> </li>
+                        <li> Dúvidas? Ligue: (11) 2661-7058 ou WhatsApp: (11) 97442-0148. </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- ACCORDION 2-->
+           <div class="accordion">
+                <button class="accordion-header">
+                    <span>Outro SUS</span> 
+                    <img src="../assets/img/arrow-down.png" class="accordion-img active" alt="Seta para baixo">
+                </button>
+                <div class="accordion-body">
+                    <p> <b>Sou do SUS (UBS) e fui encaminhado para exame no HC. Como funciona? </b></p>
+                    <p>O agendamento é feito pelo seu posto de saúde, através do sistema CROSS. O HC envia as vagas para esse sistema, e o posto te informa.</p>
+                </div>
+            </div>
+
+            <!-- ACCORDION 3 -->
+            <div class="accordion">
+                <button class="accordion-header">
+                    <span> Marcar Radiocirurgia </span> 
+                    <img src="../assets/img/arrow-down.png" class="accordion-img active" alt="Seta para baixo">
+                </button>
+                <div class="accordion-body">
+                    <p><b>Como marco uma Radiocirurgia?</b></p>
+                    <p>
+                        Para marcar uma Radiocirurgia, você precisa ligar para o telefone (11) 2661-6722.
+                    </p>
+                </div>
+            </div>
+
+            <!-- ACCORDION 4 -->
+            <div class="accordion">
+                <button class="accordion-header">
+                    <span>Ver exames feitos </span> 
+                    <img src="../assets/img/arrow-down.png" class="accordion-img active" alt="Seta para baixo">
+                </button>
+                <div class="accordion-body">
+                    <p> <b> Onde vejo o resultado dos meus exames feitos no HC?</b></p>
+                    <ul class="accordion-body__ul">
+                        <li> - Existe o Portal do Paciente (site e aplicativo)</li>
+                        <li> - Mais útil para pacientes já cadastrados</li>
+                        <li> - Para acessar: <a href="https://portaldopaciente.hc.fm.usp.br/"> Clique aqui</a> </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- ACCORDION 5 -->
+            <div class="accordion">
+                <button class="accordion-header">
+                    <span>INSS e SPTrans </span> 
+                    <img src="../assets/img/arrow-down.png" class="accordion-img active" alt="Seta para baixo">
+                </button>
+                <div class="accordion-body">
+                    <p>
+                        Você pode acessar no Portal do Paciente ou retirar impresso na Portaria 2 do Instituto de Radiologia, de segunda a sexta, das 7h às 13h. Leve documento com foto.
+                    </p>
+                </div>
+            </div>
+
+            <!-- ACCORDION 1-->
+            <div class="accordion">
+                <button class="accordion-header">
+                    <span>Convênio ou particular</span> 
+                    <img src="../assets/img/arrow-down.png" class="accordion-img active" alt="Seta para baixo">
+                </button>
+                <div class="accordion-body">
+                     <p> <b> Tenho convênio ou vou pagar particular. Como agendo exame no HC? </b></p>
+                    <p> Você pode agendar: </p>
+                    <ul class="accordion-body__ul">
+                        <li> - Por telefone: (11) 4177-6100 </li>
+                        <li> - Por e-mail: ss@hc.fm.usp.br </li>
+                        <li> - Pelo chat: <a href="ss.hc.fm.usp.br">Acessar</a> </li>
+                        <li> Presencialmente: Portaria 4 (Centro de Atendimento Médico), segunda a sexta, das 7h às 19h </li>
+                    </ul>
+                    <p> <b>Para retirar os resultados:</b> </p>
+                    <p>Retire no Centro de Atendimento Médico (Portaria 4), de segunda a sexta, das 7h às 15h. As imagens também estão disponíveis na Portaria 2, das 7h às 13h. Leve documento com foto.</p>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <footer class="footer">
+        <p> HC Conecta - Todos os direitos reservados. </p>
+    </footer>
+    <script src="../js/utils/accordion.js"> </script>
+    <script src="../js/events/previosPage.js""></script>
+</body>
+</html>
