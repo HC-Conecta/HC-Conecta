@@ -28,9 +28,9 @@
             <button class="section-surprise__button"> Revelar frase</button>
             <section class="section-surprise"> </section>
         </section>
-        <!-- SECTION ROUTER -->
-        <section class="section-router" id="section-router">
-            <a href="./pages/login.html" class="section-router__a" id="previousPage-router"> Voltar</a>
+        <!-- SECTION navigation -->
+        <section class="section-navigation" id="section-navigation">
+            <a href="./pages/login.html" class="section-navigation__a" id="previousPage-navigation"> Voltar</a>
         </section>
         <section class="section__container">
             <div class="section__div" id="section-div__appointment">
@@ -43,18 +43,18 @@
                 </div>
             </div>
             <!-- JS (CLICK) -->
-            <a href="./pages/appointment.html" id="router-appointment"></a>
+            <a href="./pages/appointment.html" id="navigation-appointment"></a>
             <div class="section__div" id="section-doubt">
                 <figure> 
                     <img src="assets/img/doubt-message.png" class="figure__image" alt="Duvida">
                 </figure>
                 <div class="section-div__text">
                     <h2> Perguntas frenquentes </h2>
-                    <p> Veja as perguntas frenquentes do HC.</p>
+                    <p> Dúvidas comuns do HC</p>
                 </div>
             </div>
             <!-- JS (CLICK) -->
-            <a href="./pages/doubt.html" id="router-doubt"></a>
+            <a href="./pages/doubt.html" id="navigation-doubt"></a>
             <div class="section__div" id="section-suport">
                 <figure> 
                     <img src="assets/img/attendant.png" class="figure__image" alt="Atendente">
@@ -65,7 +65,7 @@
                 </div>
             </div>
             <!-- JS (CLICK) -->
-            <a href="./pages/support.html" id="router-suport"></a>
+            <a href="./pages/support.html" id="navigation-suport"></a>
             <div class="section__div" id="section-aboutUs">
                 <figure> 
                     <img src="assets/img/group.png" class="figure__image" alt="Grupo">
@@ -76,12 +76,14 @@
                 </div>
             </div>
             <!-- JS (CLICK) -->
-            <a href="./pages/aboutUs.html" id="router-aboutUs"></a>
+            <a href="./pages/aboutUs.html" id="navigation-aboutUs"></a>
         </section>
     </main>
     <footer class="footer">
         <p> HC Conecta - Todos os direitos reservados. </p>
     </footer>
     <script src="js/index.js"> </script>
+    <script src="js/events/previosPage.js"></script>
+    <script src="js/events/navigation.js"></script>
 </body>
 </html>

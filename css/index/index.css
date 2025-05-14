@@ -100,7 +100,7 @@
         
     }
 
-    .section-router {
+    .section-navigation {
         display: flex;
         justify-content: center;
         background-color: var(--secondary-color);
@@ -117,13 +117,13 @@
             }
     }
     
-    .section-router__a {
+    .section-navigation__a {
         color: var(--text-light-color);
         font-size: var(--font-size-mobile);
         font-weight: 600;
     }
 
-    .section-router__a::after {
+    .section-navigation__a::after {
         content: '';
         background-image: url('../../assets/img/enter.png');
         background-size: contain;
@@ -161,9 +161,7 @@
     }
 
     .figure__image {   
-        display: flex;
-        flex-direction: row;
-        width: 130px !important; 
+        max-width: 60px;
     }
 
     .section-div__text {
@@ -305,7 +303,7 @@
     }
 
 
-    .section-router {
+    .section-navigation {
         display: flex;
         justify-content: center;
         background-color: var(--secondary-color);
@@ -322,13 +320,13 @@
             }
     }
     
-    .section-router__a {
+    .section-navigation__a {
         color: var(--text-light-color);
         font-size: var(--font-size-mobile);
         font-weight: 600;
     }
 
-    .section-router__a::after {
+    .section-navigation__a::after {
         content: '';
         background-image: url('../../assets/img/enter.png');
         background-size: contain;
@@ -368,9 +366,7 @@
     }
 
     .figure__image {   
-        display: flex;
-        flex-direction: column;
-        width: 130px !important; 
+        max-width: 60px;
     }
 
     .section-div__text {
@@ -512,7 +508,7 @@
         
     }
 
-    .section-router {
+    .section-navigation {
         display: flex;
         justify-content: center;
         background-color: var(--secondary-color);
@@ -530,13 +526,13 @@
             }
     }
     
-    .section-router__a {
+    .section-navigation__a {
         color: var(--text-light-color);
         font-size: 24px;
         font-weight: 600;
     }
 
-    .section-router__a::after {
+    .section-navigation__a::after {
         content: '';
         background-image: url('../../assets/img/enter.png');
         background-size: contain;
@@ -577,9 +573,7 @@
     }
 
     .figure__image {   
-        display: flex;
-        flex-direction: column;
-        width: 90px !important; 
+        max-width: 70px; 
     }
 
     .section-div__text {

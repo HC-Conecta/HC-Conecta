@@ -1,4 +1,5 @@
-import { validBtnChecked, validCell } from "./controller/login-controller.js";
+import { validBtnChecked, validCell } from "./utils/login-validator.js";
+
 
 // LOGIN
 const popupButton = document.querySelector('.popup__button');
