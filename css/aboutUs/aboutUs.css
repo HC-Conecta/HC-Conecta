@@ -87,4 +87,40 @@
         transform: translateY(-50%) rotate(180deg);
         right: 65px;
     }
+
+    .section-participant{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+
+    .section-participant figure{
+        margin-bottom: 10px;
+    }
+
+    .section-participant figure img{
+        border-radius: 10px;
+    }
+
+    .section-icon__figure{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .section-icon__figure{
+        margin-top: 10px;
+    }
+
+    .section-icon__figure img{
+        width: 40px;
+        transition: 0.3s ease-in-out ;
+            &:active {
+                transform: scale(1.04);
+            }
+    }
 }
