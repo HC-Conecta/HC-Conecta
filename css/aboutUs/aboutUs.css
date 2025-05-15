@@ -118,6 +118,7 @@
 
     .section-icon__figure img{
         width: 40px;
+        cursor: pointer;
         transition: 0.3s ease-in-out ;
             &:active {
                 transform: scale(1.04);
