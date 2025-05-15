@@ -27,3 +27,12 @@ const navigationAboutUs = document.getElementById('navigation-aboutUs');
 sectionAboutUs.addEventListener('click', () => {
     navigationAboutUs.click();
 })
+
+//Navigation LinkedIn and GitHub
+
+const imgLinkedin = document.querySelector('#section-icon__icon');
+const navigationLikedin = document.querySelector('#section-navigation-linkedin__a');
+
+imgLinkedin.addEventListener('click', () => {
+    window.location.href = 'https://www.linkedin.com/in/iago-liziero-54b81232b/'
+})
