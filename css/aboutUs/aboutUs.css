@@ -124,4 +124,20 @@
                 transform: scale(1.04);
             }
     }
+
+    .footer {
+        width: 100%;
+        background-color: var(--primary-color);
+        padding: 12;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 70px;
+    }
+    .footer p {
+        font-size: 16px;
+        color: var(--text-light-color);
+        max-width: 80%;
+        text-align: center;
+    }
 }
