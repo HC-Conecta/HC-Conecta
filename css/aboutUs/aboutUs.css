@@ -411,9 +411,10 @@
     .container-participant {
         display: flex;
         gap: 20px;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         align-items: center;
         justify-content: center;
+        min-width: 700px;
     }
 
     .section-participant{
@@ -454,8 +455,8 @@
         width: 40px;
         cursor: pointer;
         transition: 0.3s ease-in-out ;
-            &:active {
-                transform: scale(1.04);
+            &:hover {
+                transform: scale(1.05);
             }
     }
 

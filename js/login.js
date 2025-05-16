@@ -47,7 +47,7 @@ btnRouter.addEventListener('click', async (evt) => {
 
         if(response.status === 200) {
             const data = await response.json();
-            if(data.Valid && validator.validCell(cellInput) && validator.validBtnChecked(checkboxTerms) && validator.inputNull(cpfInput, cellInput)) {
+            if(data.Valid && validator.validCell(cellInput) && validator.validBtnChecked(checkboxTerms)) {
                 window.location = '../index.html'
             } else if (!data.Valid) {
                 const paragraph = document.createElement('p');

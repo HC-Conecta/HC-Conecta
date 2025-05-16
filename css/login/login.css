@@ -752,13 +752,14 @@
         background-color: var(--primary-color);
         padding: 12;
         display: flex;
+        justify-content: st;
         align-items: center;
-        height: 90px;
+        height: 70px;
     }
     .footer p {
         font-size: 16px;
         color: var(--text-light-color);
-        max-width: 80%;
+        min-width: 100%;
         text-align: center;
     }
 }
