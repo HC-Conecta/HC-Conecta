@@ -73,6 +73,7 @@
         border: 1px solid var(--border-color);
         padding: 12px;
         border-radius: 12px;
+        width: 260px;
     }
     
     .section-navigation__a {
@@ -111,10 +112,6 @@
     .section-participant figure img{
         border-radius: 10px;
         margin-top: 10px
-    }
-
-    div-container {
-
     }
 
     .section-icon__figure{
@@ -230,6 +227,7 @@
         border: 1px solid var(--border-color);
         padding: 12px;
         border-radius: 12px;
+        width: 270px;
     }
     
     .section-navigation__a {
@@ -274,9 +272,6 @@
         width: 270px;
     }
 
-    div-container {
-
-    }
 
     .section-icon__figure{
         display: flex;

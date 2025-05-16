@@ -148,8 +148,13 @@
     .accordion-body.active {
         display: flex;
         align-items: start;
+        animation: mymove 0.7s ease-in-out;
     }
 
+    @keyframes mymove {
+        0% {opacity: 0;}
+    }
+    
     .accordion-body__ul li a {
         color: var(--secondary-color)
     }
@@ -355,6 +360,11 @@
     .accordion-body.active {
         display: flex;
         align-items: start;
+        animation: mymove 0.7s ease-in-out;
+    }
+
+    @keyframes mymove {
+        0% {opacity: 0;}
     }
 
     .accordion-body p {
@@ -547,6 +557,8 @@
         flex-direction: column;
         align-items: center;
         display: none;
+        
+        
     }
 
     .accordion-body__ul {
@@ -564,7 +576,12 @@
         display: flex;
         align-items: start;
         gap: 15px;
+        animation: mymove 0.7s ease-in-out;
     }
+
+    @keyframes mymove {
+        0% {opacity: 0;}
+      }
 
     .accordion-body__ul li a {
         color: var(--secondary-color)

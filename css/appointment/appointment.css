@@ -147,8 +147,13 @@
 
     .accordion-body.active {
         display: flex;
+        animation: mymove 0.7s ease-in-out;
     }
 
+    @keyframes mymove {
+        0% {opacity: 0;}
+    }
+    
     .accordion-body p {
         font-size: var(--paragraph-size-mobile)
     }
@@ -348,8 +353,12 @@
 
     .accordion-body.active {
         display: flex;
+        animation: mymove 0.7s ease-in-out;
     }
 
+    @keyframes mymove {
+        0% {opacity: 0;}
+    }
     .accordion-body p {
         font-size: var(--paragraph-size-mobile)
     }
@@ -553,8 +562,12 @@
     .accordion-body.active {
         display: flex;
         flex-direction: column;
+        animation: mymove 0.7s ease-in-out;
     }
 
+    @keyframes mymove {
+        0% {opacity: 0;}
+    }
 
     .accordion-img.active {
         transform: rotate(0deg);
