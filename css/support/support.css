@@ -1,0 +1,209 @@
+/* support CSS */
+
+/* CSS SMALL DEVICES */
+@media (max-width: 679px) {
+    /* TAGS */   
+    body {
+        min-height: 100dvh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-color: var(--background-color);
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    header {
+        margin: 3rem 0 0 0;
+    }
+
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 65%;
+        gap: var(--gap-mobile);
+    }
+
+    p {
+        font-size: var(--paragraph-size-mobile);
+    }
+
+    h2 {
+        font-size: var(--paragraph-size-mobile);
+        color: var(--primary-color);
+    }
+
+    h1 {
+         font-size: var(--font-size-mobile);
+        color: var(--primary-color);
+        text-align: center;
+    }
+
+    
+    a {
+        color: var(--secondary-color);
+    }
+
+    /* LOGO */
+    .logo {
+        width: var(--logo-size);
+        height: auto;
+        margin: 0 auto;
+        margin-bottom: 1.5rem;
+    }
+
+    .section-navigation {
+        display: flex;
+        justify-content: center;
+        background-color: var(--secondary-color);
+        align-items: center;
+        flex-direction: column;
+        width: 260px;
+        padding: 12px;
+        border-radius: 10px;
+        cursor: pointer;
+        position: relative;
+        transition: 0.3s ease-in-out ;
+            &:active {
+                transform: scale(1.04);
+            }
+    }
+    
+    .section-navigation__a {
+        color: var(--text-light-color);
+        font-size: var(--font-size-mobile);
+        font-weight: 600;
+    }
+
+    .section-navigation__a::after {
+        content: '';
+        background-image: url('../../assets/img/enter.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%) rotate(180deg);
+        right: 65px;
+    }
+
+    .section-container  {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 260px;
+        border-radius: 10px;
+        position: relative;
+        gap: 10px;
+        margin: 0 0 2rem 0;
+    }
+
+    .accordion {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 12px;
+        border-radius: 10px;
+        border: 1px solid var(--border-color);
+        gap: 10px;
+    }
+
+    .accordion-header {
+        display: flex;
+        justify-content: space-between;
+        width: 260px;
+        cursor: pointer;
+    }
+
+    .accordion-header span {
+        font-size: var(--paragraph-size-mobile);
+        color: var(--primary-color);
+        font-weight: 600;
+    }
+
+    .accordion-body {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        display: none;
+        gap: 10px;
+    }
+
+    
+    .accordion-body__ul {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .accordion-body__ul li {
+        color: var(--text-color);
+        font-size: var(--paragraph-size-mobile)
+    }
+
+    [data-link] {
+        color: var(--secondary-color);
+        font-size: var(--paragraph-size-mobile)
+    }
+
+    .accordion-body.active {
+        display: flex;
+        animation: mymove 0.7s ease-in-out;
+    }
+
+    @keyframes mymove {
+        0% {opacity: 0;}
+    }
+    
+    .accordion-body p {
+        font-size: var(--paragraph-size-mobile)
+    }
+
+    .accordion-img.active {
+        transform: rotate(0deg);
+        transition: 0.2s ease-in-out ;
+    }
+
+    .accordion-img {
+        transform: rotate(180deg);
+        transition: 0.2s ease-in-out ;
+    }
+
+    .footer {
+        width: 100%;
+        background-color: var(--primary-color);
+        padding: 12;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 70px;
+    }
+    .footer p {
+        font-size: 16px;
+        color: var(--text-light-color);
+        max-width: 80%;
+        text-align: center;
+    }
+
+    .section__main {
+        display: flex;
+        flex-direction: column;
+        align-items: center
+    }
+
+    .section__main .section-h1__main {
+        max-width: 260px;
+    }
+
+    .section__main p {
+        max-width: 260px;
+        text-align: center;
+    }
+
+}
