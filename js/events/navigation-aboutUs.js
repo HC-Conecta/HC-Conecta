@@ -25,11 +25,28 @@ imgLinkedinVitor.addEventListener('click', () => {
     navigationLinkedinVitor.click();
 })
 
-//Navigation GitHub (IAGO)
+//Navigation GitHub (VITOR)
 
 const imgGithubVitor = document.querySelector('[data-icon-github-vitor]');
 const navigationGithubVitor = document.querySelector('[data-navigation-github-vitor]');
 
 imgGithubVitor.addEventListener('click', () => {
     navigationGithubVitor.click();
+})
+
+//Navigation linkedin (VITOR)
+const imgLinkedinEnrico = document.querySelector('[data-icon-linkedin-enrico]');
+const navigationLinkedinEnrico = document.querySelector('[data-navigation-linkedin-enrico]');
+
+imgLinkedinEnrico.addEventListener('click', () => {
+    navigationLinkedinEnrico.click();
+})
+
+//Navigation GitHub (VITOR)
+
+const imgGithubEnrico = document.querySelector('[data-icon-github-enrico]');
+const navigationGithubEnrico = document.querySelector('[data-navigation-github-enrico]');
+
+imgGithubEnrico.addEventListener('click', () => {
+    navigationGithubEnrico.click();
 })
