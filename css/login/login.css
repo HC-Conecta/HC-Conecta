@@ -516,7 +516,7 @@
     .footer__figure a img {
         &:active {
             transform: scale(1.04);
-            transition: 1s ease-in-out;
+            transition: 1s;
         }
     }
 }

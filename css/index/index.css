@@ -168,7 +168,7 @@
         max-width: 90%;
 
     }
-
+    
     .footer {
         width: 100%;
         background-color: var(--primary-color);
@@ -416,7 +416,7 @@
     .footer__figure a img {
         &:active {
             transform: scale(1.04);
-            transition: 1s ease-in-out;
+            transition: 1s;
         }
     }
 

@@ -37,6 +37,6 @@ const motivationFrases = [
 
 buttonSurprise.addEventListener('click', () => {
     buttonSurprise.classList.remove('section-surprise__button');
-    buttonSurprise.classList.add('button_surprise')
+    buttonSurprise.classList.add('button_surprise');
     surpriseMessage(motivationFrases);
 })
