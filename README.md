@@ -2,14 +2,14 @@
 # HC Conecta
 
 **HC Conecta** é um projeto universitário desenvolvido para facilitar a navegação digital de pacientes do Hospital das Clínicas, especialmente aqueles com baixa afinidade com tecnologia.  
-O sistema oferece páginas intuitivas, suporte emocional, agendamento de consultas e informações relevantes.
+O sistema oferece páginas intuitivas, com guias e passo a passo de como marcar sua consulta, acessar a plataforma entre outros.
 
 **Link do site**: https://hc-conecta.vercel.app/pages/login.html
 
 ## Integrantes - Turma 1TDSPG
 Iago Liziero - **RM:** 56403
 Vitor Dias - **RM:** 565422
-Iago Liziero - **RM:** 565760
+Enrico Delesporte - **RM:** 565760
 
 ---
 
