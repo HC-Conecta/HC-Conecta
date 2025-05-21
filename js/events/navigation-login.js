@@ -5,4 +5,9 @@ sectionDiscover.addEventListener('click', () => {
     navigateDiscover.click();
 })
 
-const navigateGuide = document.querySelector('')
+const sectionGuide = document.getElementById('section-guide');
+const navigateGuide = document.querySelector('.navigation-guide');
+
+sectionGuide.addEventListener('click', () => {
+    navigateGuide.click();
+})
