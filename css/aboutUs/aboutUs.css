@@ -1,5 +1,10 @@
 /* aboutUs CSS */
 
+a {
+    color: var(--text-light-color);
+}
+
+
 /* CSS SMALL DEVICES */
 @media (max-width: 679px) {
     /* TAGS */   
@@ -43,6 +48,7 @@
         color: var(--primary-color);
         text-align: center;
     }
+
 
     /* LOGO */
     .logo {
@@ -143,7 +149,7 @@
     .footer {
         width: 100%;
         background-color: var(--primary-color);
-        padding: 12px;
+        padding: 20px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -167,7 +173,29 @@
     .footer__figure a img {
         &:active {
             transform: scale(1.04);
+            transition: 1s ease-in-out;
         }
+    }
+
+    .footer__nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav__ul {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav__ul li a{
+        font-size: 16px;
+        font-weight: 300;
+            &:active {
+                transform: scale(1.04);
+                color: var(--secondary-color)
+            }
     }
 }
 
@@ -322,7 +350,7 @@
     .footer {
         width: 100%;
         background-color: var(--primary-color);
-        padding: 12px;
+        padding: 20px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -346,7 +374,29 @@
     .footer__figure a img {
         &:active {
             transform: scale(1.04);
+            transition: 1s;
         }
+    }
+
+    .footer__nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav__ul {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav__ul li a{
+        font-size: 16px;
+        font-weight: 300;
+            &:active {
+                transform: scale(1.04);
+                color: var(--secondary-color)
+            }
     }
 }
 
@@ -504,10 +554,66 @@
     .footer {
         width: 100%;
         background-color: var(--primary-color);
-        padding: 12px;
+        padding: 20px;
         display: flex;
-        justify-content: start;
-        align-items: start;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .footer p {
+        font-size: 16px;
+        color: var(--text-light-color);
+        max-width: 80%;
+        text-align: center;
+    }
+
+    .footer__figure {
+        display: flex;
+        flex-direction: row;
+        gap: var(--gap-mobile);
+    }
+
+    .footer__figure a img {
+        &:active {
+            transform: scale(1.04);
+            transition: 1s;
+        }
+    }
+
+    .footer__nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav__ul {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav__ul li a{
+        font-size: 16px;
+        font-weight: 300;
+            &:active {
+                transform: scale(1.04);
+                color: var(--secondary-color)
+            }
+    }
+LAP TO0PP
+-------------------------------------------------------
+
+pc
+
+.footer {
+        width: 100%;
+        background-color: var(--primary-color);
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         height: 100%;
         flex-direction: column;
         gap: 20px;
@@ -531,5 +637,25 @@
         &:hover {
             transform: scale(1.04);
         }
+    }
+    .footer__nav {
+        display: flex;
+        align-items: end;
+        justify-content: center;
+    }
+
+    .nav__ul {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .nav__ul li a{
+        font-size: 16px;
+        font-weight: 300;
+            &:hover {
+                transform: scale(1.04);
+                color: var(--secondary-color);
+            }
     }
 }
