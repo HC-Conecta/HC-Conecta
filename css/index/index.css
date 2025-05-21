@@ -80,7 +80,7 @@ a {
 
 
     .section__main h2{
-        font-size: var(--font-size-mobile);
+        font-size: 20px;
         color: var(--text-light-color);
     }
 
