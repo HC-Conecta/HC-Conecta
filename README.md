@@ -119,6 +119,9 @@ cd hc-conecta
 Abra o arquivo `login.html` com um navegador de sua escolha
 (pode clicar duas vezes no arquivo ou usar uma extensão como "Live Server" no VS Code).
 
+## Link do repositório
+
+###### https://github.com/HC-Conecta/hc-conecta/
 ---
 
 ## Equipe
